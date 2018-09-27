@@ -9,18 +9,7 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    @Override
-    public void onClick(View v) {
-        // TODO Auto-generated method stub
-        if (v.getId() == R.id.btn_Login) {
-            String uname = txt_UserName.getText().toString();
-            String upassword = txt_UserPW.getText().toString();
 
-            System.out.println(
-                    "The Portal ID is: " + uname + "\n" +
-                    "The Password is: " + upassword + "\n");
-        }
-    }
 
     EditText txt_UserName, txt_UserPW;
     Button btn_Login;
@@ -34,5 +23,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
         // Register the Login button to click listener
         // Whenever the button is clicked, onClick is called
         btn_Login.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        // TODO Auto-generated method stub
+        if (v.getId() == R.id.btn_Login) {
+            String uname = txt_UserName.getText().toString();
+            String upassword = txt_UserPW.getText().toString();
+
+            System.out.println(
+                    "The Portal ID is: " + uname + "\n" +
+                            "The Password is: " + upassword + "\n");
+        }
     }
 }
