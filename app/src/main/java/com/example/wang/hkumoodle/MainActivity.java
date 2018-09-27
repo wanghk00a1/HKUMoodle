@@ -16,10 +16,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
             String uname = txt_UserName.getText().toString();
             String upassword = txt_UserPW.getText().toString();
 
-            System.out.println( "@@@@@@@@@@@@@@@\n" +
+            System.out.println(
                     "The Portal ID is: " + uname + "\n" +
-                    "The Password is: " + upassword + "\n" +
-                    "@@@@@@@@@@@@@@@" );
+                    "The Password is: " + upassword + "\n");
         }
     }
 
